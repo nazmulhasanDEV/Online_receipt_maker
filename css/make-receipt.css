@@ -1,0 +1,378 @@
+#receipt_form_nd_preview_sec {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#receipt_form_nd_preview_sec .receipt_form_div form {
+    box-sizing: border-box;
+    border: 1px solid #3381ff;
+    padding: 10px;
+    box-shadow: .5px .5px 12px .5px #3381ff;
+}
+
+#receipt_form_nd_preview_sec .receipt_form_div form #submit-receipt {
+    background-color: #3381ff;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+#receipt_form_nd_preview_sec .receipt_preview img {
+    width: 100%;
+    height: 710px;
+    box-shadow: .5px .5px 5px 4px #F2F2F2;
+    /* border: 1px solid #3381ff; */
+}
+
+/* ***************country supported by us****************** */
+
+ #supported_country .country_list .card {
+     background-color: #F2F2F2;
+     width: 100%;
+     border: none;
+     box-shadow: .5px .5px 12px .5px #3381ff;
+ }
+
+ #supported_country .country_list .card h3 {
+     color: #3381ff;
+     position: relative;
+     padding-top: 5px;
+ }
+
+/* ************ends country supported by us**************** */
+
+
+
+/* **************benfits of online receipt******************** */
+
+#benefits_of_online_receipt_sec {
+    position: relative;
+    top: 50px;
+}
+#benefits_of_online_receipt_sec .title_of_benefits_online_rcpt h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+/* **************ends benfits of online receipt******************** */
+
+
+/* ***************preview_receipt************* */
+
+.main_receipt_preview_div {
+    width: 100%;
+    box-shadow: 1px 1px 1px 2px gray;
+    background-color: #F2F2F2;
+    padding: 10px;
+    display: none;
+}
+.finally_preview_receipt {
+    width: 100%;
+    height: 680px;
+    background-color: white;
+    /* border: 2px solid #3381ff; */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+@media only screen and (min-width: 991.5px) {
+    .finally_preview_receipt {
+        width: 380px;
+        height: 680px;
+        background-color: white;
+        /* border: 2px solid #3381ff; */
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+}
+
+.finally_preview_receipt .receipt_logo img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.finally_preview_receipt .receipt_title {
+    position: relative;
+    padding-top: 10px;
+}
+.finally_preview_receipt .receipt_title h4{
+    line-height: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.8;
+}
+.finally_preview_receipt .receipt_title h6{
+    line-height: 15px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+/* receipt date time */
+
+.finally_preview_receipt .receipt_date_time {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.finally_preview_receipt .receipt_date_time h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.finally_preview_receipt .receipt_date_time .rcpt_time {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt date time */
+
+/* receipt marchant */
+.finally_preview_receipt .receipt_marchant {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.finally_preview_receipt .receipt_marchant h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.finally_preview_receipt .receipt_marchant .rcpt_marchant_number {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt marchant */
+
+/* receipt terminal */
+.finally_preview_receipt .receipt_terminal {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.finally_preview_receipt .receipt_terminal h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.finally_preview_receipt .receipt_terminal .rcpt_terminal_number {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt terminal */
+
+/* receipt sequence */
+.finally_preview_receipt .receipt_sequence {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.finally_preview_receipt .receipt_sequence h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.finally_preview_receipt .receipt_sequence .rcpt_sequence_number {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt sequence */
+
+/* receipt host */
+.finally_preview_receipt .receipt_host {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.finally_preview_receipt .receipt_host h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.finally_preview_receipt .receipt_host .rcpt_host_number {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt host */
+
+/* receipt visa */
+.finally_preview_receipt .receipt_visa {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.finally_preview_receipt .receipt_visa h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.finally_preview_receipt .receipt_visa .rcpt_visa_number {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt visa */
+
+
+
+/* receipt source and expire */
+.finally_preview_receipt .receipt_source_expire {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.finally_preview_receipt .receipt_source_expire h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.finally_preview_receipt .receipt_source_expire .rcpt_source_expire_number {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt source and expire */
+
+/* receipt subtotal */
+.finally_preview_receipt .receipt_subtotal {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.finally_preview_receipt .receipt_subtotal h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+
+/* ends receipt subtotal */
+
+/* receipt tax */
+.finally_preview_receipt .receipt_tax {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.finally_preview_receipt .receipt_tax h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+
+/* ends receipt tax */
+
+/* receipt total amount */
+.finally_preview_receipt .receipt_total_amnt {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.finally_preview_receipt .receipt_total_amnt h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+/* ends receipt tax */
+
+/* receipt total amount */
+.finally_preview_receipt .receipt_auth_code {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.finally_preview_receipt .receipt_auth_code h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+/* ends receipt tax */
+
+.receipt_thank_you {
+    position: relative;
+    padding-top: 20px;
+}
+
+.receipt_thank_you h6{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+}
+
+/* receipt buttons */
+
+.receipt_action_btns {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.receipt_action_btns a {
+    width: 115px;
+    height: 30px;
+    background-color: #3381ff;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding-top: 3px;
+    transition: .4s;
+    border-radius: 3px;
+}
+
+.receipt_action_btns a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ***************ends preview_receipt************* */

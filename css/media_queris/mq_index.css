@@ -1,0 +1,21 @@
+@media only screen and (min-width: 1091px) and (max-width: 1200px) {
+    #navbar .navbar-collapse .receipt_search_form input[type='search'] {
+        width: 250px !important;
+        border: 1px solid #3381ff;
+      }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1091px) {
+    #navbar .navbar-collapse {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 991.5px) {
+    #navbar .login_signup_lang_div {
+        display: none;
+    }
+}

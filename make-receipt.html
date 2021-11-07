@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Maker</title>
+
+    <!-- bootstrap-4.0 css cdn link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- custom css index.css -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- media queries mq_index.css -->
+    <link rel="stylesheet" href="css/media_queris/mq_index.css">
+
+    <!-- login/register stylesheet -->
+    <link rel="stylesheet" href="css/login-register.css">
+
+    <!-- make-receipt stylesheet -->
+    <link rel="stylesheet" href="css/make-receipt.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/c9e991d87d.js" crossorigin="anonymous"></script>
+
+    <!-- TO CONVERT HTML DIV INTO PDF -->
+    <!-- html2pdf generator link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- to convert html div into image -->
+    <!-- html2canvas -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+
+</head>
+<body>
+
+    <!-- ******************pre-loader********************* -->
+    
+        <!-- Add loader-wrapper just below the body tag -->
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+
+    <!-- ******************ends pre-loader****************** -->
+
+    <!-- header -->
+    
+    <section id="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- <div class="col-md-12"> -->
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-light" style="width: 100%;">
+                            <!-- logo -->
+                            <a class="navbar-brand" href="#">
+                                <img src="logo/logo.jpeg" alt="">
+                            </a>
+                            <!-- logo -->
+                            <button class="navbar-toggler mobile_nav_btn" type="button">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+                              <form class="form-inline my-2 my-lg-0 receipt_search_form">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search receipt">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                              </form>
+    
+                            </div>
+    
+                            <div class="login_signup_lang_div">
+                                <div class="language">
+                                    <form action="">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">English</option>
+                                            <option value="">Spanish</option>
+                                        </select>
+                                    </form>
+                                </div>
+      
+                                <div class="login">
+                                    <button type="button" class="login_btn form-control"><a href="#">Login</a></button>
+                                </div>
+                                
+                                <div class="sign-up">
+                                    <button type="button" class="login_btn form-control"><a href="#">Sign Up</a></button>
+                                </div>
+                            </div>
+    
+                          </nav>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>  
+
+    <!-- nav for  mobile################# -->
+    <div class="main_div_for_mobile_nav">
+        <div class="content_div_for_nav">
+
+            <div class="close_mobile_nav">
+                <span class="close_mobile_nav"><i class="fas fa-times"></i></span>
+            </div>
+
+            <div class="logo_mobile d-flex justify-content-center">
+                <img src="logo/logo.jpeg" style="width: 80px; height: 80px;" alt="">
+            </div>
+
+            <div  class="com_name d-flex justify-content-center">
+                <h3 class="text-center">Scontrino <span style="color: #3381ff;">Smart</span></h3>
+            </div>
+
+            <hr>
+
+            <div class="form_mobile d-flex justify-content-center">
+                <form action="">
+                    <input type="search" name="search_bar_mobile" class="form-control" placeholder="Search Receipt..">
+                    <button type="submit" name="search_submit_mobile"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="login_signup_lang_div_mobile">
+                <div class="language d-flex justify-content-center">
+                    <form action="">
+                        <select name="" id="" class="form-control">
+                            <option value="">English</option>
+                            <option value="">Spanish</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="login d-flex justify-content-center">
+                    <button type="button" class="login_btn form-control"><a href="#">Login</a></button>
+                </div>
+                
+                <div class="sign-up d-flex justify-content-center">
+                    <button type="button" class="signup_btn form-control"><a href="#">Sign Up</a></button>
+                </div>
+
+                <p class="mobile_terms_conditions text-center">By signing up, you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ends nav for mobile############# -->
+
+    <!-- ends header -->
+
+
+    <!-- ***************receipt form and preview********************************** -->
+
+    <section id="receipt_form_nd_preview_sec">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-center" style="font-weight: bold;">Enter necessary information and click <strong style="color: #3381ff;">"Make Recceipt"</strong> button to generate receipt</h4>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- receipt form -->
+                <div class="col-md-6 receipt_form_div">
+                    <form action="" method="get" enctype="multipart/form-data" onsubmit="receipt_info(this);">
+                        <div class="form-group row">
+
+                          <div class="col-md-6">
+                            <input type="file" onchange="imgPreview();" name="brand-logo" class="form-control" id="brand_logo_img" accept="image/*">
+                          </div>
+                          <div class="col-md-6">
+                            <img src="images/receipt_demo1.png" id="receipt_form_img_preview" alt="" style="width: 80px; height: 80px; border-radius: 50%;">
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <div class="col-md-12">
+                            <input type="text" name="brand-name" class="form-control" id="brand-name" placeholder="Brand Name">
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                              <input type="text" name="address-1" class="form-control" id="address-1" placeholder="Address Line 1" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                              <input type="text" name="address-2" class="form-control" id="address-2" placeholder="Address Line 2" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                              <input type="date" name="date" class="form-control" id="rcpt_date" placeholder="Date">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="time" name="time" class="form-control" id="rcpt_time" placeholder="Date">
+                              </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                              <input type="text" name="terminal" class="form-control" id="marchant_id" placeholder="MERCHANT">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="terminal" class="form-control" id="terminal_id" placeholder="TERMINAL">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                              <input type="text" name="sequence" class="form-control" id="sequence_id" placeholder="SEQUENCE">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="host" class="form-control" id="host_id" placeholder="HOST">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                              <input type="text" name="visa-card" class="form-control" id="visa-card" placeholder="VISA">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                              <input type="text" name="source" class="form-control" id="source_id" placeholder="SOURCE">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="expiry" class="form-control" id="expiry_date" placeholder="EXPIRY">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                              <select name="" class="form-control" id="Currency_sign">
+                                  <option value="">Select Currency</option>
+                                  <option value="$">$</option>
+                                  <option value="€">€</option>
+                                  <option value="₹">₹</option>
+                                  <option value="¥">¥</option>
+                                  <option value="QR">QR</option>
+                                  <option value="kr">kr</option>
+                                  <option value="£">£</option>
+                              </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" name="sub-total" class="form-control" id="sub-total" placeholder="Subtotal">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                              <input type="number" name="tax" class="form-control" id="tax_amnt" placeholder="TAX %">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" name="auth-code" class="form-control" id="auth-code" placeholder="Auth Code">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6 text-center">
+                              <input type="button" name="preview-receipt_btn" class="form-control disable" id="preview-receipt-btn" onclick="receipt_info();" value="Preview" style="border: none; background: #3381ff;color: white;cursor: pointer;">
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <input type="submit" name="submit-receipt" class="form-control" id="submit-receipt" value="Save">
+                              </div>
+                        </div>
+
+
+                      </form>
+                </div>
+                <!-- ends receipt form -->
+
+                <!-- preview -->
+                <div class="col-md-6">
+
+
+                    <div class="receipt_preview">
+                        <img src="logo/receipt-demo.png" alt="">
+                    </div>
+
+                    <div class="main_receipt_preview_div">
+                        <div class="finally_preview_receipt" id="final_prev_of_recpt_with_fll_info">
+
+                            <div class="receipt_logo">
+                                <br>
+                                <img src="logo/logo.png" id="prev_rcpt_logo" style="width:80px; height:80px;border-radius:50%;" alt="">
+                            </div>
+    
+                            <div class="receipt_title">
+                                <h4 class="text-center mt-1" id="prev_rcpt_brand_name">Brand Name</h4>
+                                <h6 class="text-center mt-1" id="prev_rcpt_addrss1">address, address</h6>
+                                <h6 class="text-center mt-1" id="prev_rcpt_addrss2">address, address</h6>
+                            </div>
+    
+                            <div class="receipt_date_time">
+                                <h6>
+                                    <span class="rcpt_date">Date: <span id="prev_rcpt_date">20/2/2021</span></span>
+                                    <span  class="rcpt_time">Time: <span id="prev_rcpt_time">8:29 PM</span></span>
+                                </h6>
+                            </div>
+    
+                            <div class="receipt_marchant">
+                                <h6>
+                                    <span class="rcpt_marchant_title">MARCHANT # :</span>
+                                    <span  class="rcpt_marchant_number"><span id="prev_marchnt_no">25478965842</span></span>
+                                </h6>
+                            </div>
+    
+                            <div class="receipt_terminal">
+                                <h6>
+                                    <span class="rcpt_terminal_title">TERMINAL # :</span>
+                                    <span  class="rcpt_terminal_number"><span id="prev_terminal_no">25478965842</span></span>
+                                </h6>
+                            </div>
+    
+                            <div class="receipt_sequence">
+                                <h6>
+                                    <span class="rcpt_sequence_title">SEQUENCE # :</span>
+                                    <span  class="rcpt_sequence_number"><span id="prev_sequence_no">25478965842</span></span>
+                                </h6>
+                            </div>
+    
+                            <div class="receipt_host">
+                                <h6>
+                                    <span class="rcpt_host_title">HOST :</span>
+                                    <span  class="rcpt_host_number"><span id="prev_host_no">25478965842</span></span>
+                                </h6>
+                            </div>
+    
+                            <div class="receipt_visa">
+                                <h6>
+                                    <span class="rcpt_visa_title">VISA # :</span>
+                                    <span  class="rcpt_visa_number"><span id="prev_visa_no">25478965842</span></span>
+                                </h6>
+                            </div>
+    
+                            <div class="receipt_source_expire">
+                                <h6>
+                                    <span class="rcpt_source_expire_title">SOURCE : <span id="prev_source_key">KEY</span></span>
+                                    <span  class="rcpt_source_expire_number">EXPIRE : <span id="prev_expire_date">XXXX</span></span>
+                                </h6>
+                            </div>
+    
+                            <div class="receipt_subtotal">
+                                <h6>
+                                    <span class="rcpt_subtotal_title">SUBTOTAL :</span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span  class="rcpt_subtotal_amnt"><span id="subtotal_amnt">$124.87</span></span>
+                                </h6>
+                            </div>
+    
+                            <div class="receipt_tax">
+                                <h6>
+                                    <span class="rcpt_tax_title">TAX :</span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;
+                                    <span  class="rcpt_tax_amount"><span id="prev_tax_amnt">$124.87</span></span>
+                                </h6>
+                            </div>
+    
+                            <div class="receipt_total_amnt">
+                                <h6>
+                                    <span class="rcpt_total_amnt_title">TOTAL AMNT :</span>
+                                    &nbsp;
+                                    <span  class="rcpt_total_amnt"><span id="prev_total_amnt">$124.87</span></span>
+                                </h6>
+                            </div>
+    
+                            <div class="receipt_auth_code">
+                                <h6>
+                                    <span class="rcpt_auth_code_title">AUTH CODE :</span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span  class="rcpt_auth_code"><span id="prev_auth_code_no">547859258</span></span>
+                                </h6>
+                            </div>
+    
+                            <div class="receipt_thank_you">
+                                <h6 class="text-center">THANK YOU</h6>
+                                <h6 class="text-center">
+                                    << CUSTOMER COPY >>
+                                </h6>
+                            </div>
+    
+                        </div>
+                        
+
+                        <div class="receipt_action_btns">
+                            <a href="#" type="button" onclick="pdf_generator();">Download PDF</a>
+                            <a href="#" type="button" onclick="image_generator();">Download PNG</a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- ends preview -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ***************ends receipt form and preview********************************** -->
+
+
+
+    <!-- *****************supported countries************************** -->
+    <section id="supported_country">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <h3 class="text-center" style="font-weight: bold;color: #3381ff;">Country Supported By Us</h3>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row country_list">
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h3 class="card-title">Country Name</h3>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h3 class="card-title">Country Name</h3>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h3 class="card-title">Country Name</h3>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h3 class="card-title">Country Name</h3>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+
+            <br>
+
+            <div class="row country_list">
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h3 class="card-title">Country Name</h3>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h3 class="card-title">Country Name</h3>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h3 class="card-title">Country Name</h3>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h3 class="card-title">Country Name</h3>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- *****************ends supported countries************************** -->
+
+
+    <!-- *********************benefits of online receipt************************** -->
+
+    <section id="benefits_of_online_receipt_sec">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 title_of_benefits_online_rcpt">
+                    <h2 class="text-left">What are the Benefits of Using Free Invoice Generator?</h2>
+                    <p>Here are the some benefits of free online receipt</p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <ul style="position: absolute; left: 0;font-family: 'Roboto', sans-serif;">
+                        <li>No Cost Invoice Generator - create unlimited invoices online. No Restriction. No SignUp Fee. No Conditions. Free Forever.</li>
+                        <li>Client Management - manage all your client in one place. Access the information when required.</li>
+                        <li>Use professional invoice templates that are compatible with letterheads and easy to print.</li>
+                        <li>Essential Reports to analyze your business and client transactions.</li>
+                        <li>Add fields and columns to the invoice as per the requirements.</li>
+                        <li>Add Multiple User and Business - if you have multiple businesses or users, you can add them for generating the invoices.</li>
+                        <li>Bulk upload invoices - create multiple invoices on a single upload.</li>
+                        <li>Create recurring invoices for daily, weekly and monthly purposes.</li>
+                        <li>Send or share invoices by downloading invoices as PDF, print, email to the client and also by sharing on WhatsApp.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- *********************ends benefits of online receipt************************** -->
+
+
+    <!-- *************************footer **************************************** -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <ul class="footer_top_nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <ul class="footer_top_nav_social_media">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="footer_bottom" style="background-color: #3381ff; max-height: 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center" style="color: white; padding-top: 3px;">
+                        All rights reserved @<strong>Scontrino Smart</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--******************footer ends *******************  -->
+
+    <!-- custom js file -->
+    <script src="js/index.js"></script>
+
+    <!-- cusstom js -->
+    <script src="js/make-receipt.js"></script>
+
+    <!-- bootstrap 4.0 js cdn link -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

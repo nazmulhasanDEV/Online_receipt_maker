@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Maker</title>
+
+    <!-- bootstrap-4.0 css cdn link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- custom css index.css -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- media queries mq_index.css -->
+    <link rel="stylesheet" href="css/media_queris/mq_index.css">
+
+    <!-- profile css stylesheet -->
+    <link rel="stylesheet" href="css/user_profile.css">
+
+    <link rel="stylesheet" href="css/profile_receipt.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/c9e991d87d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- ******************pre-loader********************* -->
+    
+        <!-- Add loader-wrapper just below the body tag -->
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+
+    <!-- ******************ends pre-loader****************** -->
+
+    <!-- header -->
+    
+    <section id="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- <div class="col-md-12"> -->
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-light" style="width: 100%;">
+                            <!-- logo -->
+                            <a class="navbar-brand" href="#">
+                                <img src="logo/logo.jpeg" alt="">
+                            </a>
+                            <!-- logo -->
+                            <button class="navbar-toggler mobile_nav_btn" type="button">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+                              <form class="form-inline my-2 my-lg-0 receipt_search_form">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search receipt">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                              </form>
+    
+                            </div>
+    
+                            <div class="login_signup_lang_div">
+                                <div class="language">
+                                    <form action="">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">English</option>
+                                            <option value="">Spanish</option>
+                                        </select>
+                                    </form>
+                                </div>
+      
+                                <div class="login">
+                                    <button type="button" class="login_btn form-control"><a href="#">Login</a></button>
+                                </div>
+                                
+                                <div class="sign-up">
+                                    <button type="button" class="login_btn form-control"><a href="#">Sign Up</a></button>
+                                </div>
+                            </div>
+    
+                          </nav>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>  
+
+    <!-- nav for  mobile################# -->
+    <div class="main_div_for_mobile_nav">
+        <div class="content_div_for_nav">
+
+            <div class="close_mobile_nav">
+                <span class="close_mobile_nav"><i class="fas fa-times"></i></span>
+            </div>
+
+            <div class="logo_mobile d-flex justify-content-center">
+                <img src="logo/logo.jpeg" style="width: 80px; height: 80px;" alt="">
+            </div>
+
+            <div  class="com_name d-flex justify-content-center">
+                <h3 class="text-center">Scontrino <span style="color: #3381ff;">Smart</span></h3>
+            </div>
+
+            <hr>
+
+            <div class="form_mobile d-flex justify-content-center">
+                <form action="">
+                    <input type="search" name="search_bar_mobile" class="form-control" placeholder="Search Receipt..">
+                    <button type="submit" name="search_submit_mobile"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="login_signup_lang_div_mobile">
+                <div class="language d-flex justify-content-center">
+                    <form action="">
+                        <select name="" id="" class="form-control">
+                            <option value="">English</option>
+                            <option value="">Spanish</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="login d-flex justify-content-center">
+                    <button type="button" class="login_btn form-control"><a href="#">Login</a></button>
+                </div>
+                
+                <div class="sign-up d-flex justify-content-center">
+                    <button type="button" class="signup_btn form-control"><a href="#">Sign Up</a></button>
+                </div>
+
+                <p class="mobile_terms_conditions text-center">By signing up, you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ends nav for mobile############# -->
+
+    <!-- ends header -->
+
+
+
+  <!-- cover image section starts -->
+  <section class="user_profile_cover_section">
+    <div class="container">
+      <div class="row">
+        <div class="user_profile_cover_img_text d-flex justify-content-center">
+          <div>
+            <h3 class="">
+              <i class="fas fa-angle-double-left"></i> Welcome To Creator Dashboard <i
+                class="fas fa-angle-double-right"></i>
+            </h3>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ends cover image section -->
+
+  <br><br>
+  <!-- course list section starts -->
+  <section class="profile_section">
+    <div class="container">
+      <br><br>
+      <!-- user profile picture -->
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 profile_img d-flex justify-content-center">
+
+          <!-- card starts -->
+          <div class="card text-center" style="width: 18rem;">
+            <br>
+            <img class="card-img-top" src="images/banner.jpg" alt="Card image cap">
+            <br>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <h4>Nazmul Hasan</h4>
+                <p>CEO, FarmExShop Ltd</p>
+              </li>
+            </ul>
+          </div>
+          <!-- card ends -->
+
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      <!-- user profile picture ends -->
+      <br><br>
+      <div class="row">
+        <div class="col-md-12 profile_contents">
+          <!-- nav -->
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs d-flex justify-content-center user_profile_nav_tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                aria-selected="false">Profile Details</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab"
+                aria-controls="settings" aria-selected="false">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="logout-tab" href="#logout" role="tab" aria-controls="settings"
+                aria-selected="false">Logout</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <!-- tab content starts -->
+
+            <!-- home tab -->
+            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+              <!-- your courses title -->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="my_course_title">
+                    <br><br>
+                    <h3 class="text-center">YOUR COURSES</h3>
+                  </div>
+                </div>
+              </div>
+
+              <!-- course list -->
+              <br>
+              <div class="row">
+                <div class="col-md-6 user_course_list">
+                  <!-- card stars -->
+                  <div class="user_main_receipt_preview_div">
+                    <div class="user_finally_preview_receipt" id="user_final_prev_of_recpt_with_fll_info">
+
+                        <div class="user_receipt_logo">
+                            <br>
+                            <img src="logo/logo.png" id="user_prev_rcpt_logo" style="width:80px; height:80px;border-radius:50%;" alt="">
+                        </div>
+
+                        <div class="user_receipt_title">
+                            <h4 class="text-center mt-1" id="user_prev_rcpt_brand_name">Brand Name</h4>
+                            <h6 class="text-center mt-1" id="user_prev_rcpt_addrss1">address, address</h6>
+                            <h6 class="text-center mt-1" id="user_prev_rcpt_addrss2">address, address</h6>
+                        </div>
+
+                        <div class="user_receipt_date_time">
+                            <h6>
+                                <span class="user_rcpt_date">Date: <span id="user_prev_rcpt_date">20/2/2021</span></span>
+                                <span  class="user_rcpt_time">Time: <span id="user_prev_rcpt_time">8:29 PM</span></span>
+                            </h6>
+                        </div>
+
+                        <div class="user_eceipt_marchant">
+                            <h6>
+                                <span class="user_rcpt_marchant_title">MARCHANT # :</span>
+                                <span  class="user_rcpt_marchant_number"><span id="user_prev_marchnt_no">25478965842</span></span>
+                            </h6>
+                        </div>
+
+                        <div class="user_receipt_terminal">
+                            <h6>
+                                <span class="user_rcpt_terminal_title">TERMINAL # :</span>
+                                <span  class="user_rcpt_terminal_number"><span id="user_prev_terminal_no">25478965842</span></span>
+                            </h6>
+                        </div>
+
+                        <div class="user_receipt_sequence">
+                            <h6>
+                                <span class="user_rcpt_sequence_title">SEQUENCE # :</span>
+                                <span  class="user_rcpt_sequence_number"><span id="user_prev_sequence_no">25478965842</span></span>
+                            </h6>
+                        </div>
+
+                        <div class="user_receipt_host">
+                            <h6>
+                                <span class="user_rcpt_host_title">HOST :</span>
+                                <span  class="user_rcpt_host_number"><span id="user_prev_host_no">25478965842</span></span>
+                            </h6>
+                        </div>
+
+                        <div class="user_receipt_visa">
+                            <h6>
+                                <span class="user_rcpt_visa_title">VISA # :</span>
+                                <span  class="user_rcpt_visa_number"><span id="user_prev_visa_no">25478965842</span></span>
+                            </h6>
+                        </div>
+
+                        <div class="user_receipt_source_expire">
+                            <h6>
+                                <span class="user_rcpt_source_expire_title">SOURCE : <span id="user_prev_source_key">KEY</span></span>
+                                <span  class="user_rcpt_source_expire_number">EXPIRE : <span id="user_prev_expire_date">XXXX</span></span>
+                            </h6>
+                        </div>
+
+                        <div class="user_receipt_subtotal">
+                            <h6>
+                                <span class="user_rcpt_subtotal_title">SUBTOTAL :</span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span  class="user_rcpt_subtotal_amnt"><span id="user_subtotal_amnt">$124.87</span></span>
+                            </h6>
+                        </div>
+
+                        <div class="user_receipt_tax">
+                            <h6>
+                                <span class="user_rcpt_tax_title">TAX :</span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;
+                                <span  class="user_rcpt_tax_amount"><span id="user_prev_tax_amnt">$124.87</span></span>
+                            </h6>
+                        </div>
+
+                        <div class="user_receipt_total_amnt">
+                            <h6>
+                                <span class="user_rcpt_total_amnt_title">TOTAL AMNT :</span>
+                                &nbsp;
+                                <span  class="user_rcpt_total_amnt"><span id="user_prev_total_amnt">$124.87</span></span>
+                            </h6>
+                        </div>
+
+                        <div class="user_receipt_auth_code">
+                            <h6>
+                                <span class="user_rcpt_auth_code_title">AUTH CODE :</span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <span  class="user_rcpt_auth_code"><span id="user_prev_auth_code_no">547859258</span></span>
+                            </h6>
+                        </div>
+
+                        <div class="user_receipt_thank_you">
+                            <h6 class="text-center">THANK YOU</h6>
+                            <h6 class="text-center">
+                                << CUSTOMER COPY >>
+                            </h6>
+                        </div>
+
+                    </div>
+                    
+
+                    <div class="receipt_action_btns">
+                        <a href="#" type="button" onclick="pdf_generator();">Download PDF</a>
+                        <a href="#" type="button" onclick="image_generator();">Download PNG</a>
+                    </div>
+
+                </div>
+                  <!-- card ends -->
+                </div>
+              </div>
+
+              <br>
+            </div>
+
+            <!-- profile details tab -->
+            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+              <br>
+              <!-- account inforamtion starts -->
+              <br>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="user_about_me">
+                    <h4 class="text-center">Account Information</h4>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                  <!-- data table starts -->
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th scope="row">Full Name</th>
+                        <td>Nazmul Hasan</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">Username</th>
+                        <td>johnDoe@gmail</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">E-mail</th>
+                        <td>email@gmail.com</td>
+                      </tr>
+
+
+                      <tr>
+                        <th scope="row">Profession</th>
+                        <td>CTO, FarmEx Shop Ltd</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                  <!-- data table ends -->
+                </div>
+                <div class="col-md-3"></div>
+              </div>
+
+            </div>
+
+
+            <!-- settings tab -->
+            <div class="tab-pane profile_settings_sect" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+              <!-- content starts -->
+              <br>
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- profile settings -->
+
+                  <h4 class="text-center">Add Profession</h4>
+                  <hr>
+                  <form action="" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                      <label for="full_name">Profession</label>
+                      <input type="text" name="full_name" id="full_name" class="form-control" placeholder="Profession">
+                    </div>
+
+                    <div class="form-group ">
+                      <input type="submit" class="settings_submit_btn" value="Add Profession">
+                    </div>
+
+                  </form>
+
+                  <form action="" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                      <label for="full_name">Add Profile Picture</label>
+                      <input type="file" accept="" name="full_name" id="full_name" class="form-control" placeholder="Profile Picture">
+                    </div>
+
+                    <div class="form-group">
+                      <input type="submit" class="settings_submit_btn" value="Add Profile Pic">
+                    </div>
+
+                  </form>
+
+                </div>
+
+                <div class="col-md-6">
+                  <!-- Update Password -->
+
+                  <h4 class="text-center">Update Password</h4>
+                  <hr>
+                  <form action="" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                      <label for="pass_email">E-mail</label>
+                      <input type="text" name="pass_email" id="pass_email" class="form-control"
+                        placeholder="Type Your E-mail..">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="old_password">Old Password</label>
+                      <input type="password" name="old_password" id="old_password" class="form-control"
+                        placeholder="Old Password">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="new_password">New Password</label>
+                      <input type="new_password" name="new_password" id="new_password" class="form-control"
+                        placeholder="New Password">
+                    </div>
+
+                    <div class="form-group">
+                      <input type="submit" class="settings_submit_btn" value="Update Password">
+                    </div>
+
+                  </form>
+
+                </div>
+
+              </div>
+
+              <!-- content ends -->
+            </div>
+          </div>
+          <!-- tab content ends -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- course list section ends -->
+
+
+
+    <!-- *************************footer **************************************** -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <ul class="footer_top_nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <ul class="footer_top_nav_social_media">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="footer_bottom" style="background-color: #3381ff; max-height: 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center" style="color: white; padding-top: 3px;">
+                        All rights reserved @<strong>Scontrino Smart</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--******************footer ends *******************  -->
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+    <!-- custom js file -->
+    <script src="js/index.js"></script>
+
+    <!-- bootstrap 4.0 js cdn link -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

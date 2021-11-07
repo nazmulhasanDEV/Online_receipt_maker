@@ -1,0 +1,112 @@
+#login_register_sec {
+    position: relative;
+    top: 100px;
+}
+
+#login_register_sec .login-register-content {
+    background-color: #F2F2F2;
+    width: 80%;
+    height: 450px;
+    padding: 30px;
+    box-shadow: .5px .5px 1px 1px #3381ff;
+}
+
+#login_register_sec .login-register-content #pills-tabContent {
+    width: 100%;  
+    position: relative;
+}
+
+#login_register_sec .login-register-content ul {
+    width: 100%;
+    /* border-bottom: 1px solid red; */
+}
+
+#login_register_sec .login-register-content ul li {
+    width: 50%;
+    border-radius: none !important;
+    border : none !important;
+    outline: none !important;
+    text-align: center;
+}
+
+#login_register_sec .login-register-content ul li a {
+    font-size: 22px;
+}
+
+/* sign-up box####################### */
+
+#login_register_sec .login-register-content .sign-up-box {
+    width: 100%;
+}
+
+#login_register_sec .login-register-content .sign-up-box form input {
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #3381ff;
+    border-radius: 15px;
+    text-indent: 8px;
+}
+
+#login_register_sec .login-register-content .sign-up-box form .sign_up_submit_btn {
+    position: absolute;
+    top: 15px;
+    width: 120px;
+    height: 40px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    background-color: #3381ff;
+    color: white;
+    border-radius: 15px;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ends sign-up box################################ */
+
+
+/* sign-login box####################### */
+
+#login_register_sec .login-register-content .login-box {
+    width: 100%; 
+    position: absolute; 
+    top:50px;
+    text-align: center;
+}
+
+#login_register_sec .login-register-content .login-box form input {
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #3381ff;
+    border-radius: 15px;
+    text-indent: 8px;
+}
+
+#login_register_sec .login-register-content .login-box form .login_submit_btn {
+    position: absolute;
+    top: 15px;
+    width: 120px;
+    height: 40px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    background-color: #3381ff;
+    color: white;
+    border-radius: 15px;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ends sign-up box################################ */

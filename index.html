@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Maker</title>
+
+    <!-- bootstrap-4.0 css cdn link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- custom css index.css -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- media queries mq_index.css -->
+    <link rel="stylesheet" href="css/media_queris/mq_index.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/c9e991d87d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- ******************pre-loader********************* -->
+    
+        <!-- Add loader-wrapper just below the body tag -->
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+
+    <!-- ******************ends pre-loader****************** -->
+
+    <!-- header -->
+    
+    <section id="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- <div class="col-md-12"> -->
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-light" style="width: 100%;">
+                            <!-- logo -->
+                            <a class="navbar-brand" href="#">
+                                <img src="logo/logo.jpeg" alt="">
+                            </a>
+                            <!-- logo -->
+                            <button class="navbar-toggler mobile_nav_btn" type="button">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+                              <form class="form-inline my-2 my-lg-0 receipt_search_form">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search receipt">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                              </form>
+    
+                            </div>
+    
+                            <div class="login_signup_lang_div">
+                                <div class="language">
+                                    <form action="">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">English</option>
+                                            <option value="">Spanish</option>
+                                        </select>
+                                    </form>
+                                </div>
+      
+                                <div class="login">
+                                    <button type="button" class="login_btn form-control"><a href="#">Login</a></button>
+                                </div>
+                                
+                                <div class="sign-up">
+                                    <button type="button" class="login_btn form-control"><a href="#">Sign Up</a></button>
+                                </div>
+                            </div>
+    
+                          </nav>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>  
+
+    <!-- nav for  mobile################# -->
+    <div class="main_div_for_mobile_nav">
+        <div class="content_div_for_nav">
+
+            <div class="close_mobile_nav">
+                <span class="close_mobile_nav"><i class="fas fa-times"></i></span>
+            </div>
+
+            <div class="logo_mobile d-flex justify-content-center">
+                <img src="logo/logo.jpeg" style="width: 80px; height: 80px;" alt="">
+            </div>
+
+            <div  class="com_name d-flex justify-content-center">
+                <h3 class="text-center">Scontrino <span style="color: #3381ff;">Smart</span></h3>
+            </div>
+
+            <hr>
+
+            <div class="form_mobile d-flex justify-content-center">
+                <form action="">
+                    <input type="search" name="search_bar_mobile" class="form-control" placeholder="Search Receipt..">
+                    <button type="submit" name="search_submit_mobile"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="login_signup_lang_div_mobile">
+                <div class="language d-flex justify-content-center">
+                    <form action="">
+                        <select name="" id="" class="form-control">
+                            <option value="">English</option>
+                            <option value="">Spanish</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="login d-flex justify-content-center">
+                    <button type="button" class="login_btn form-control"><a href="#">Login</a></button>
+                </div>
+                
+                <div class="sign-up d-flex justify-content-center">
+                    <button type="button" class="signup_btn form-control"><a href="#">Sign Up</a></button>
+                </div>
+
+                <p class="mobile_terms_conditions text-center">By signing up, you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ends nav for mobile############# -->
+
+    <!-- ends header -->
+
+    
+    <!-- *********************banner************************* -->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+
+                <!-- col-1 -->
+                <div class="col-md-6">
+                    <div class="banner-text">
+                        <h1>Let's create free money receipt with <strong>Scontrino Smart</strong></h1>
+                        <p class="text-justify">
+                            Scontrino Smart is a free online money receipt generator which 
+                            will help you to create recceipt, invoice for your customer in
+                            easy and secure way.
+                        </p>
+
+                        <div>
+                            <button type="button" class="banner_create_receipt_btn"><a href="#" class="banner_create_receipt_btn_text">Create New Receipt</a></button>
+                            <button type="button" class="banner_create_accnt_btn"><a href="#" class="banner_create_accnt_btn_text">Create New Account</a></button>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- ends col-1 -->
+
+                <!-- col-2 -->
+                <div class="col-md-6">
+                    <div class="banner_img">
+                        <img src="images/receipt_generator_helper.png" alt="">
+                    </div>
+                </div>
+                <!-- ends col-2 -->
+
+            </div>
+        </div>
+    </section>
+    <!-- ********************ends banner********************* -->
+
+
+    <!-- *******************process of making receipt************ -->
+
+    <section id="receipt_maker_process_section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 process_sec_title">
+                    <h2 class="text-center">How to Create Receipt</h2>
+                    <p class="text-center">Create receipt, download, print & send your customers</p>
+                </div>
+            </div>
+
+            <div class="row receipt_maker_process">
+
+                <div class="col-md-4">
+                    <div>
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body">
+                              <h3 class="card-title text-center">
+                                  <span><i class="fas fa-edit"></i></span>
+                                </h3>
+                              <h5 class="card-title text-center"><strong>Enter Details</strong></h5>
+                              <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
+                              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div>
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body">
+                              <h3 class="card-title text-center">
+                                  <span><i class="fas fa-eye"></i></span>
+                                </h3>
+                              <h5 class="card-title text-center"><strong>Preview</strong></h5>
+                              <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
+                              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div>
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body">
+                              <h3 class="card-title text-center">
+                                  <span><i class="fas fa-download"></i></span>
+                                </h3>
+                              <h5 class="card-title text-center"><strong>Download</strong></h5>
+                              <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
+                              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ************ends process of making receipt************** -->
+
+
+    <!-- *************** receipt demo****************************** -->
+
+    <section id="receipt_demo">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 receipt_demo_header">
+                    <h2 class="text-center">Free Online Receipt Template</h2>
+                    <p class="text-center">Create professional receipts online with our free receipt template</p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row receipt_demo_content_img_reqmnts">
+                <div class="col-md-5">
+                    <div class="receipt_demo_img">
+                        <img src="./logo/receipt-demo.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-2"></div>
+    
+                <div class="col-md-5">
+                    <div class="receipt_requirements">
+                        <h5 style="font-weight: bold;">Receipt Requirements</h5>
+                        <li><i class="fas fa-check-circle"></i> Seller/Supplier/Vendor’s information</li>
+                        <li><i class="fas fa-check-circle"></i> Seller’s name, address, contact, & tax registration no.</li>
+                        <li><i class="fas fa-check-circle"></i> Seller/Company’s logo</li>
+                        <li><i class="fas fa-check-circle"></i> Client’s/Buyer’s/Receiver’s Information</li>
+                        <li><i class="fas fa-check-circle"></i> Receipt number</li>
+                        <li><i class="fas fa-check-circle"></i> Issue date of the receipt</li>
+                        <li><i class="fas fa-check-circle"></i> Date & Time of Payment</li>
+                        <li><i class="fas fa-check-circle"></i> Applicable Tax information</li>
+                        <li><i class="fas fa-check-circle"></i> Payment Method</li>
+                        <li><i class="fas fa-check-circle"></i> Amount Received</li>
+                        <li><i class="fas fa-check-circle"></i> Shipping & discount details (if applicable)</li>
+                        <li><i class="fas fa-check-circle"></i> Document currency</li>
+                        <li><i class="fas fa-check-circle"></i> Terminal, Host, Sequence etc</li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+    </section>
+
+    <!-- ************** ends receipt demo************************** -->
+
+    <!-- ************** Key point about receipt*********************** -->
+
+    <section id="key_points_abt_recpt_sec">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 key_points_abt_recpt_header">
+                    <h2 class="text-center">Key things you need to know about  Receipt</h2>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="what_is_receipt_cntnt">
+                        <h4>What deos receipt mean?</h4>
+                        <p class="text-justify">
+                            A receipt is an acknowledgement provided by the vendor to the buyer. It contains the details of goods or services that are delivered by the seller. 
+                            Many suppliers and sellers use this receipt as proof for processing returns or refunds or based on
+                            their requirements as proof.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="types_of_receipt">
+                        <h4>Types of receipt</h4>
+                        <p class="text-justify">
+                            There are several types of receipt like <strong>Cash Receipt</strong>, <strong>Expense Receipt</strong>, 
+                            <strong>Sales Receipt</strong>, <strong>Official Receipt</strong>, <strong>Delivery Receipt</strong> etc. These
+                            receipts used for acknowledgment of the receiving of the cash amount, proof for the goods or products sold,  record the sales,
+                            proof of the shipment of ordered goods.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row scnd_row_for_key_points">
+
+                <div class="col-md-6">
+                    <div class="how_to_send_receipt">
+                        <h4>How to Send a Receipt to your Client?</h4>
+                        <p class="text-justify">
+                            You can download your receipt as a PDF, attach it to email, copy the link, or 
+                            print it using our online invoice maker. After doing it, you can easily send it to 
+                            your customer. 
+                            You can use a Vyapar online receipt generator to make it more professional.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="why_to_use_online_receipt">
+                        <h4>Why Use Our Online Receipt Maker?</h4>
+                        <p class="text-justify">
+                            The receipt you give to your customer is an acknowledgement slip. Customers often 
+                            keep it for future reference for claiming returns or refunds. It portrays your brands' 
+                            image and showcases your 
+                            professionalism. It will help create a lasting impression on your customers
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ************** endsKey point about receipt*********************** -->
+
+
+    <!-- ********************** faqs & support **************************** -->
+
+    <section id="faqs_nd_support_sec">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 title_faqs_nd_support">
+                    <h3>Frequently Asked Questions</h3>
+                </div>
+            </div>
+
+            <div class="row faq_and_support_question_list">
+
+                <div class="col-md-6">
+
+                   <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                       <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                       <p class="text-justify" style="padding: 5px;"> 
+                           Lorem ipsum doller summit. Lorem ipsum doller summit
+                           Lorem ipsum doller summit. Lorem ipsum doller summit
+                           Lorem ipsum doller summit. Lorem ipsum doller summit
+                       </p>
+                   </div>
+
+                   <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                    <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                    <p class="text-justify" style="padding: 5px;"> 
+                        Lorem ipsum doller summit. Lorem ipsum doller summit
+                        Lorem ipsum doller summit. Lorem ipsum doller summit
+                        Lorem ipsum doller summit. Lorem ipsum doller summit
+                    </p>
+                  </div>
+
+                  <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                    <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                    <p class="text-justify" style="padding: 5px;"> 
+                        Lorem ipsum doller summit. Lorem ipsum doller summit
+                        Lorem ipsum doller summit. Lorem ipsum doller summit
+                        Lorem ipsum doller summit. Lorem ipsum doller summit
+                    </p>
+                </div>
+
+                <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                 <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                 <p class="text-justify" style="padding: 5px;"> 
+                     Lorem ipsum doller summit. Lorem ipsum doller summit
+                     Lorem ipsum doller summit. Lorem ipsum doller summit
+                     Lorem ipsum doller summit. Lorem ipsum doller summit
+                 </p>
+               </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                        <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                        <p class="text-justify" style="padding: 5px;"> 
+                            Lorem ipsum doller summit. Lorem ipsum doller summit
+                            Lorem ipsum doller summit. Lorem ipsum doller summit
+                            Lorem ipsum doller summit. Lorem ipsum doller summit
+                        </p>
+                    </div>
+ 
+                    <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                     <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                     <p class="text-justify" style="padding: 5px;"> 
+                         Lorem ipsum doller summit. Lorem ipsum doller summit
+                         Lorem ipsum doller summit. Lorem ipsum doller summit
+                         Lorem ipsum doller summit. Lorem ipsum doller summit
+                     </p>
+                   </div>
+ 
+                   <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                     <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                     <p class="text-justify" style="padding: 5px;"> 
+                         Lorem ipsum doller summit. Lorem ipsum doller summit
+                         Lorem ipsum doller summit. Lorem ipsum doller summit
+                         Lorem ipsum doller summit. Lorem ipsum doller summit
+                     </p>
+                 </div>
+ 
+                 <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                  <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                  <p class="text-justify" style="padding: 5px;"> 
+                      Lorem ipsum doller summit. Lorem ipsum doller summit
+                      Lorem ipsum doller summit. Lorem ipsum doller summit
+                      Lorem ipsum doller summit. Lorem ipsum doller summit
+                  </p>
+                </div>
+ 
+                 </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ********************** ends faqs & support **************************** -->
+
+
+    <!-- *************************footer **************************************** -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <ul class="footer_top_nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <ul class="footer_top_nav_social_media">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="footer_bottom" style="background-color: #3381ff; max-height: 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center" style="color: white; padding-top: 3px;">
+                        All rights reserved @<strong>Scontrino Smart</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--******************footer ends *******************  -->
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+    <!-- custom js file -->
+    <script src="js/index.js"></script>
+
+    <!-- bootstrap 4.0 js cdn link -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Maker</title>
+
+    <!-- bootstrap-4.0 css cdn link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- custom css index.css -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- media queries mq_index.css -->
+    <link rel="stylesheet" href="css/media_queris/mq_index.css">
+
+    <!-- login/register stylesheet -->
+    <link rel="stylesheet" href="css/login-register.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/c9e991d87d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- ******************pre-loader********************* -->
+    
+        <!-- Add loader-wrapper just below the body tag -->
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+
+    <!-- ******************ends pre-loader****************** -->
+
+    <!-- header -->
+    
+    <section id="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- <div class="col-md-12"> -->
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-light" style="width: 100%;">
+                            <!-- logo -->
+                            <a class="navbar-brand" href="#">
+                                <img src="logo/logo.jpeg" alt="">
+                            </a>
+                            <!-- logo -->
+                            <button class="navbar-toggler mobile_nav_btn" type="button">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+                              <form class="form-inline my-2 my-lg-0 receipt_search_form">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search receipt">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                              </form>
+    
+                            </div>
+    
+                            <div class="login_signup_lang_div">
+                                <div class="language">
+                                    <form action="">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">English</option>
+                                            <option value="">Spanish</option>
+                                        </select>
+                                    </form>
+                                </div>
+      
+                                <div class="login">
+                                    <button type="button" class="login_btn form-control"><a href="#">Login</a></button>
+                                </div>
+                                
+                                <div class="sign-up">
+                                    <button type="button" class="login_btn form-control"><a href="#">Sign Up</a></button>
+                                </div>
+                            </div>
+    
+                          </nav>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>  
+
+    <!-- nav for  mobile################# -->
+    <div class="main_div_for_mobile_nav">
+        <div class="content_div_for_nav">
+
+            <div class="close_mobile_nav">
+                <span class="close_mobile_nav"><i class="fas fa-times"></i></span>
+            </div>
+
+            <div class="logo_mobile d-flex justify-content-center">
+                <img src="logo/logo.jpeg" style="width: 80px; height: 80px;" alt="">
+            </div>
+
+            <div  class="com_name d-flex justify-content-center">
+                <h3 class="text-center">Scontrino <span style="color: #3381ff;">Smart</span></h3>
+            </div>
+
+            <hr>
+
+            <div class="form_mobile d-flex justify-content-center">
+                <form action="">
+                    <input type="search" name="search_bar_mobile" class="form-control" placeholder="Search Receipt..">
+                    <button type="submit" name="search_submit_mobile"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="login_signup_lang_div_mobile">
+                <div class="language d-flex justify-content-center">
+                    <form action="">
+                        <select name="" id="" class="form-control">
+                            <option value="">English</option>
+                            <option value="">Spanish</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="login d-flex justify-content-center">
+                    <button type="button" class="login_btn form-control"><a href="#">Login</a></button>
+                </div>
+                
+                <div class="sign-up d-flex justify-content-center">
+                    <button type="button" class="signup_btn form-control"><a href="#">Sign Up</a></button>
+                </div>
+
+                <p class="mobile_terms_conditions text-center">By signing up, you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ends nav for mobile############# -->
+
+    <!-- ends header -->
+
+    <!-- *******************login and register******************** -->
+
+
+    <section id="login_register_sec">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center" style="padding-bottom: 30px;">Create account & make unlimited Receipt</h3>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 d-flex justify-content-center">
+
+                    <div class="login-register-content">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-signup" role="tab" aria-controls="pills-home" aria-selected="true">
+                                  Sign Up
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                  Login
+                              </a>
+                            </li>
+                        </ul>
+                          <div class="tab-content" id="pills-tabContent">
+
+                            <div class="tab-pane fade show active text-center sign-up-box" id="pills-signup" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <form action="">
+                                    <input type="text" name="name" placeholder="Type your name...."><br>
+                                    <input type="text" name="username" placeholder="Type your username...."><br>
+                                    <input type="email" name="email" placeholder="Type your email...."><br>
+                                    <input type="password" name="pass" placeholder="Type your password...."><br>
+                                    <input type="password" name="confirm-pass" placeholder="confirm password....">
+                                    <br>
+                                    <button type="submit" class="sign_up_submit_btn">Create</button>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane fade login-box" style="" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <form action="">
+                                    <input type="text" name="username" placeholder="Type your username...."><br>
+                                    <input type="email" name="email" placeholder="Type your email...."><br>
+                                    <input type="password" name="pass" placeholder="Type your password...."><br>
+                                    <br>
+                                    <button type="submit" class="login_submit_btn">Login</button>
+                                </form>
+                            </div>
+
+                          </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- *****************ends login and register***************** -->
+
+
+    
+    <!-- ********************** faqs & support **************************** -->
+
+    <section id="faqs_nd_support_sec">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 title_faqs_nd_support">
+                    <h3>Frequently Asked Questions</h3>
+                </div>
+            </div>
+
+            <div class="row faq_and_support_question_list">
+
+                <div class="col-md-6">
+
+                   <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                       <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                       <p class="text-justify" style="padding: 5px;"> 
+                           Lorem ipsum doller summit. Lorem ipsum doller summit
+                           Lorem ipsum doller summit. Lorem ipsum doller summit
+                           Lorem ipsum doller summit. Lorem ipsum doller summit
+                       </p>
+                   </div>
+
+                   <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                    <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                    <p class="text-justify" style="padding: 5px;"> 
+                        Lorem ipsum doller summit. Lorem ipsum doller summit
+                        Lorem ipsum doller summit. Lorem ipsum doller summit
+                        Lorem ipsum doller summit. Lorem ipsum doller summit
+                    </p>
+                  </div>
+
+                  <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                    <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                    <p class="text-justify" style="padding: 5px;"> 
+                        Lorem ipsum doller summit. Lorem ipsum doller summit
+                        Lorem ipsum doller summit. Lorem ipsum doller summit
+                        Lorem ipsum doller summit. Lorem ipsum doller summit
+                    </p>
+                </div>
+
+                <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                 <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                 <p class="text-justify" style="padding: 5px;"> 
+                     Lorem ipsum doller summit. Lorem ipsum doller summit
+                     Lorem ipsum doller summit. Lorem ipsum doller summit
+                     Lorem ipsum doller summit. Lorem ipsum doller summit
+                 </p>
+               </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                        <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                        <p class="text-justify" style="padding: 5px;"> 
+                            Lorem ipsum doller summit. Lorem ipsum doller summit
+                            Lorem ipsum doller summit. Lorem ipsum doller summit
+                            Lorem ipsum doller summit. Lorem ipsum doller summit
+                        </p>
+                    </div>
+ 
+                    <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                     <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                     <p class="text-justify" style="padding: 5px;"> 
+                         Lorem ipsum doller summit. Lorem ipsum doller summit
+                         Lorem ipsum doller summit. Lorem ipsum doller summit
+                         Lorem ipsum doller summit. Lorem ipsum doller summit
+                     </p>
+                   </div>
+ 
+                   <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                     <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                     <p class="text-justify" style="padding: 5px;"> 
+                         Lorem ipsum doller summit. Lorem ipsum doller summit
+                         Lorem ipsum doller summit. Lorem ipsum doller summit
+                         Lorem ipsum doller summit. Lorem ipsum doller summit
+                     </p>
+                 </div>
+ 
+                 <div class="faq_q_spprt_div_1 hidden_faqs_btn">
+                  <button class="fq_sprt_1">Lorem ipsum <span><i class="fas fa-plus-circle"></i></span></button>
+                  <p class="text-justify" style="padding: 5px;"> 
+                      Lorem ipsum doller summit. Lorem ipsum doller summit
+                      Lorem ipsum doller summit. Lorem ipsum doller summit
+                      Lorem ipsum doller summit. Lorem ipsum doller summit
+                  </p>
+                </div>
+ 
+                 </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ********************** ends faqs & support **************************** -->
+
+
+    <!-- *************************footer **************************************** -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <ul class="footer_top_nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <ul class="footer_top_nav_social_media">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="footer_bottom" style="background-color: #3381ff; max-height: 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center" style="color: white; padding-top: 3px;">
+                        All rights reserved @<strong>Scontrino Smart</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--******************footer ends *******************  -->
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+    <!-- custom js file -->
+    <script src="js/index.js"></script>
+
+    <!-- bootstrap 4.0 js cdn link -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

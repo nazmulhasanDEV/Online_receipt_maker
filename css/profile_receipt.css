@@ -1,0 +1,328 @@
+
+/* ***************preview_receipt************* */
+
+.user_main_receipt_preview_div {
+    width: 100%;
+    box-shadow: 1px 1px 1px 2px gray;
+    background-color: #F2F2F2;
+    padding: 10px;
+}
+.user_finally_preview_receipt {
+    width: 100%;
+    height: 680px;
+    background-color: white;
+    /* border: 2px solid #3381ff; */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+@media only screen and (max-width: 992px) and (min-width:1199.5px) {
+    .user_finally_preview_receipt {
+        width: 90%;
+        height: 680px;
+        background-color: white;
+        /* border: 2px solid #3381ff; */
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .user_finally_preview_receipt {
+        width: 110%;
+        height: 680px;
+        background-color: white;
+        /* border: 2px solid #3381ff; */
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+}
+
+.user_finally_preview_receipt .user_receipt_logo img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user_finally_preview_receipt .user_receipt_title {
+    position: relative;
+    padding-top: 10px;
+}
+.user_finally_preview_receipt .user_receipt_title h4{
+    line-height: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.8;
+}
+.user_finally_preview_receipt .user_receipt_title h6{
+    line-height: 15px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+/* receipt date time */
+
+.user_finally_preview_receipt .user_receipt_date_time {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.user_finally_preview_receipt .user_receipt_date_time h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.user_finally_preview_receipt .user_receipt_date_time .user_rcpt_time {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt date time */
+
+/* receipt marchant */
+.user_finally_preview_receipt .user_eceipt_marchant {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.user_finally_preview_receipt .user_eceipt_marchant h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.user_finally_preview_receipt .user_eceipt_marchant .user_rcpt_marchant_number {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt marchant */
+
+/* receipt terminal */
+.user_finally_preview_receipt .user_receipt_terminal {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.user_finally_preview_receipt .user_receipt_terminal h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.user_finally_preview_receipt .user_receipt_terminal .user_rcpt_terminal_number {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt terminal */
+
+/* receipt sequence */
+.user_finally_preview_receipt .user_receipt_sequence {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.user_finally_preview_receipt .user_receipt_sequence h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.user_finally_preview_receipt .user_receipt_sequence .user_rcpt_sequence_number {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt sequence */
+
+/* receipt host */
+.user_finally_preview_receipt .user_receipt_host {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.user_finally_preview_receipt .user_receipt_host h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.user_finally_preview_receipt .user_receipt_host .user_rcpt_host_number {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt host */
+
+/* receipt visa */
+.user_finally_preview_receipt .user_receipt_visa {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.user_finally_preview_receipt .user_receipt_visa h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.user_finally_preview_receipt .user_receipt_visa .user_rcpt_visa_number {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt visa */
+
+
+
+/* receipt source and expire */
+.user_finally_preview_receipt .user_receipt_source_expire {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.user_finally_preview_receipt .user_receipt_source_expire h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+.user_finally_preview_receipt .user_receipt_source_expire .user_rcpt_source_expire_number {
+    position: absolute;
+    right: 20px;
+}
+/* ends receipt source and expire */
+
+/* receipt subtotal */
+.user_finally_preview_receipt .user_receipt_subtotal {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.user_finally_preview_receipt .user_receipt_subtotal h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+
+/* ends receipt subtotal */
+
+/* receipt tax */
+.user_finally_preview_receipt .user_receipt_tax {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.user_finally_preview_receipt .user_receipt_tax h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+
+/* ends receipt tax */
+
+/* receipt total amount */
+.user_finally_preview_receipt .user_receipt_total_amnt {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.user_finally_preview_receipt .user_receipt_total_amnt h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+/* ends receipt tax */
+
+/* receipt total amount */
+.user_finally_preview_receipt .user_receipt_auth_code {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.user_finally_preview_receipt .user_receipt_auth_code h6 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    position: relative;
+    padding-top: 5px;
+}
+
+/* ends receipt tax */
+
+.user_receipt_thank_you {
+    position: relative;
+    padding-top: 20px;
+}
+
+.user_receipt_thank_you h6{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+}
+
+/* receipt buttons */
+
+.user_receipt_action_btns {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.user_receipt_action_btns a {
+    width: 115px;
+    height: 30px;
+    background-color: #3381ff;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding-top: 3px;
+    transition: .4s;
+    border-radius: 3px;
+}
+
+.user_receipt_action_btns a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ***************ends preview_receipt************* */

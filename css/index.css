@@ -1,0 +1,622 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ####################### pre-loader #################################### */
+
+  @media (max-width: 567px) {
+    h1 {
+      font-size: 7vw;
+      text-align: center;
+    }
+  }
+  
+  
+  /* Loader Styles start here */
+  .loader-wrapper {
+    --line-width: 5px;
+    --curtain-color: #f1faee;
+    --outer-line-color: #a8dadc;
+    --middle-line-color: #3381ff;
+    --inner-line-color: #3381ff;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+  }
+  
+  .loader {
+    display:block;
+    position: relative;
+    top:50%;
+    left:50%;
+  /*   transform: translate(-50%, -50%); */
+    width:150px;
+    height:150px;
+    margin:-75px 0 0 -75px;
+    border:var(--line-width) solid transparent;
+    border-top-color: var(--outer-line-color);
+    border-radius:100%;
+    -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+    z-index:1001;
+  }
+  
+  .loader:before {
+    content:"";
+    position: absolute;
+    top:4px;
+    left:4px;
+    right:4px;
+    bottom:4px;
+    border:var(--line-width) solid transparent;
+    border-top-color: var(--inner-line-color);
+    border-radius:100%;
+    -webkit-animation: spin 3s linear infinite;
+            animation: spin 3s linear infinite;
+  }
+  
+  .loader:after {
+    content:"";
+    position: absolute;
+    top:14px;
+    left:14px;
+    right:14px;
+    bottom:14px;
+    border:var(--line-width) solid transparent;
+    border-top-color: var(--middle-line-color);
+    border-radius:100%;
+    -webkit-animation: spin 1.5s linear infinite;
+            animation: spin 1.5s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0%   { 
+      -webkit-transform: rotate(0deg); 
+        -ms-transform: rotate(0deg); 
+            transform: rotate(0deg);
+    }
+    100% { 
+      -webkit-transform: rotate(360deg); 
+        -ms-transform: rotate(360deg); 
+            transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0%   { 
+      -webkit-transform: rotate(0deg); 
+        -ms-transform: rotate(0deg); 
+            transform: rotate(0deg);
+    }
+    100% { 
+      -webkit-transform: rotate(360deg); 
+        -ms-transform: rotate(360deg); 
+            transform: rotate(360deg);
+    }
+  }
+  
+  .loader-wrapper .loader-section {
+    position:fixed;
+    top:0;
+    background:var(--curtain-color);
+    width:51%;
+    height:100%;
+    z-index:1000;
+  }
+  
+  .loader-wrapper .loader-section.section-left {
+    left:0
+  }
+  .loader-wrapper .loader-section.section-right {
+    right:0;
+  }
+  
+  /* Loaded Styles */ 
+  .loaded .loader-wrapper .loader-section.section-left {
+    transform: translateX(-100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  }
+  .loaded .loader-wrapper .loader-section.section-right {
+    transform: translateX(100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+  }
+  .loaded .loader {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+  .loaded .loader-wrapper {
+    visibility: hidden;
+    transform:translateY(-100%);
+    transition: all .3s 1s ease-out;
+  }
+
+  /* ***********************ends pre loader******************** */
+
+  /* *************************header and navigation bar************************** */
+
+  #navbar {
+      background: white !important;
+      /* border-bottom: 1px solid #3381ff; */
+      box-shadow: 0 1px 1px -1px #3381ff;
+  }
+
+  #navbar  .mobile_nav_btn  {
+     border: none;
+     outline: none;
+     color: #3381ff !important;
+  }
+
+  #navbar .navbar-collapse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #navbar .navbar .navbar-brand img {
+        position: relative;
+        /* left: 50px; */
+        width: 50px;
+        height: 50px;
+  }
+
+  #navbar .login_signup_lang_div {
+      display: flex;
+      position: absolute;
+      right: 5%;
+  }
+
+  #navbar .login_signup_lang_div div {
+      position: relative;
+      margin-right: 10px;
+  }
+
+  #navbar .navbar-collapse .receipt_search_form {
+      position: relative;
+  }
+
+  #navbar .navbar-collapse .receipt_search_form input[type='search'] {
+    width: 350px;
+    border: 1px solid #3381ff;
+  }
+
+  #navbar .navbar-collapse .receipt_search_form button{
+    position: absolute;
+    right: 8px;
+    height: 37px !important;
+    background-color: none;
+    color: #3381ff !important;
+    /* border: 1px solid #3381ff; */
+    border: none !important;
+    outline: none !important;
+  }
+
+  #navbar .navbar-collapse .receipt_search_form button:hover {
+    background-color: #3381ff !important;
+    color: white !important;
+  }
+
+  #navbar .login_signup_lang_div .language form select {
+      border: 1px solid #3381ff;
+      color: #1E1E1E;
+  }
+
+#navbar .login_signup_lang_div .login button {
+    /* border: 1px solid #3381ff !important; */
+    background-color: #3381ff;
+}
+#navbar .login_signup_lang_div .login button  a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#navbar .login_signup_lang_div .sign-up button {
+    border: 1px solid #3381ff !important;
+    color: #3381ff;
+}
+#navbar .login_signup_lang_div .sign-up button  a{
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+/*  mobile nav bar style##################### */
+.main_div_for_mobile_nav {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(100, 100, 100, 0.5);;
+    visibility: hidden;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  background-color: #1E1E1E;
+  height: 480px;
+  box-shadow: 0px 1px 3px 1px inset #3381ff;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .close_mobile_nav {
+  position: relative;
+  margin-bottom: 25px;
+}
+.main_div_for_mobile_nav .content_div_for_nav .close_mobile_nav span{
+  position: absolute;
+  background-color: #3381ff;
+  border-radius: 50%;
+  right: -5px;
+  top: -5px;
+  color: white;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  padding-top: 6px;
+  cursor: pointer;
+}
+.main_div_for_mobile_nav .content_div_for_nav .close_mobile_nav span:hover {
+  opacity: 0.99;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .logo_mobile img {
+  position: relative;
+  top: 10px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .com_name h3 {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  color: white;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav hr {
+  background-color: white;
+  height: 0.5px !important;
+  border: none;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .form_mobile {
+  position: relative;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .form_mobile {
+  position: relative;
+  top: 15px;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .form_mobile  form input{
+  position: relative;
+  top: 10px;
+  width: 270px !important;
+  height: 40px;
+  border: 1px solid #3381ff !important;
+  outline: none !important;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .form_mobile  form button {
+  position: absolute;
+  outline: none !important;
+  border: none !important;
+  color: #3381ff;
+  right: 27px;
+  top: 12px;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .login_signup_lang_div_mobile {
+  position: relative;
+  top: 15px;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .login_signup_lang_div_mobile .language form {
+  position: relative;
+  top: 20px;
+  width: 270px !important;
+  height: 40px;
+  border: none !important;
+  outline: none !important;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .login_signup_lang_div_mobile .login_btn {
+  position: relative;
+  top: 30px;
+  width: 270px !important;
+  height: 40px;
+  border: none !important;
+  outline: none !important;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .login_signup_lang_div_mobile .login_btn a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .login_signup_lang_div_mobile .signup_btn  {
+  position: relative;
+  top: 40px;
+  width: 270px !important;
+  height: 40px;
+  border: none !important;
+  outline: none !important;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .login_signup_lang_div_mobile .signup_btn a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+
+.main_div_for_mobile_nav .content_div_for_nav .login_signup_lang_div_mobile .mobile_terms_conditions {
+  color: #3381ff;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+/* ends mobile nav#################### */
+
+  /* *************************ends header and navigation bar************************** */
+
+
+
+  /* *******************banner starts********************** */
+  
+  #banner {
+    position: relative;
+    top: 50px;
+  }
+  #banner .banner_img img {
+    position: relative;
+    top: -10px;
+    width: 85%;
+    height: 280px;
+  }
+
+  #banner .banner_create_receipt_btn {
+    border: none;
+    outline: none;
+    background-color: #3381ff;
+    /* border-radius: 15px; */
+    height: 35px;
+  } 
+
+  #banner .banner_create_receipt_btn:hover {
+    background-color: white;
+    border: 1px solid #3381ff;
+    transition: .4s;
+  }
+
+  #banner .banner_create_receipt_btn:hover .banner_create_receipt_btn_text {
+    color: black;
+  }
+  
+  #banner .banner_create_receipt_btn a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+  }
+
+  #banner .banner_create_accnt_btn {
+    border: 1px solid #3381ff;
+    outline: none;
+    /* background-color: #3381ff; */
+    background-color: white;
+    /* border-radius: 15px; */
+    height: 35px;
+    position: relative;
+    margin-left: 10px;
+  } 
+
+  #banner .banner_create_accnt_btn:hover {
+    background-color: #3381ff;
+    transition: .4s;
+  }
+
+  #banner .banner_create_accnt_btn:hover .banner_create_accnt_btn_text{
+     color: white;
+   }
+  #banner .banner_create_accnt_btn a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+  }
+
+
+
+  /* ***************ends banner**************************** */
+
+  /* ****************process of receipt maker******************* */
+  #receipt_maker_process_section .container {
+    position: relative;
+    top: 80px;
+    /* background: #F2F2F2; */
+  }
+
+  #receipt_maker_process_section .process_sec_title {
+    position: relative;
+    padding-top: 20px;
+  }
+
+  #receipt_maker_process_section .process_sec_title h2 {
+    color: #3381ff;
+    font-weight: bold;
+  }
+
+  #receipt_maker_process_section .receipt_maker_process .card {
+    border: none;
+    box-shadow: 1px 1px 2px 2px #3381ff;
+  }
+
+  #receipt_maker_process_section .receipt_maker_process .card span {
+    color: #3381ff;
+  }
+
+  /* ****************ends process of receipt maker******************* */
+
+
+  /* ***********receipt  demo************************* */
+
+  #receipt_demo {
+    position: relative;
+    top: 150px;
+    background: #F2F2F2;
+  }
+
+  #receipt_demo .receipt_demo_header {
+    position: relative;
+    padding-top: 20px;
+  }
+
+ 
+
+  #receipt_demo .receipt_demo_img img {
+    width: 100%;
+    box-shadow: .5px .5px 10px 1px #1E1E1E;
+  }
+
+  #receipt_demo .receipt_requirements li {
+    list-style-type: none;
+    background-color: white;
+    margin-top: 16px;
+    padding: 5px;
+    color: #3381ff;
+    font-weight: bold;
+  }
+
+
+  /* ***********receipt demo ends********************** */
+
+
+  /* ***********key points about receipt****************** */
+
+  #key_points_abt_recpt_sec {
+    position: relative;
+    top: 220px;
+  }
+
+  #key_points_abt_recpt_sec .key_points_abt_recpt_header h2 {
+    font-weight: bold;
+    color: #3381ff;
+  }
+
+  #key_points_abt_recpt_sec .what_is_receipt_cntnt h4 {
+    font-weight: bold;
+    color: #3381ff;
+  }
+
+  #key_points_abt_recpt_sec .types_of_receipt h4 {
+    font-weight: bold;
+    color: #3381ff;
+  }
+
+
+  #key_points_abt_recpt_sec .scnd_row_for_key_points {
+    position: relative;
+    top: 40px;
+  }
+
+  #key_points_abt_recpt_sec .how_to_send_receipt h4 {
+    font-weight: bold;
+    color: #3381ff;
+  }
+
+  #key_points_abt_recpt_sec .why_to_use_online_receipt h4 {
+    font-weight: bold;
+    color: #3381ff;
+  }
+
+  
+  /* ***********ends key points about receipt****************** */
+  
+
+  /* ************************** faqs and support******************* */
+
+  #faqs_nd_support_sec {
+    position: relative;
+    top: 310px;
+  }
+
+  #faqs_nd_support_sec .title_faqs_nd_support h3 {
+    text-transform: capitalize;
+    /* color: #3381ff; */
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .faq_and_support_question_list {
+    position: relative;
+    top: 30px;
+  }
+
+ 
+  #faqs_nd_support_sec .faq_q_spprt_div_1 {
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+  }
+
+  #faqs_nd_support_sec .faq_q_spprt_div_1 .fq_sprt_1 {
+    width: 100%;
+    height: 40px;
+    background-color: #3381ff;
+    border: none;
+    outline: none;
+    color: white;
+    position: relative;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  #faqs_nd_support_sec .faq_q_spprt_div_1 .fq_sprt_1 span {
+    position: absolute;
+    left: 95%;
+  }
+
+
+
+  /* ************************** ends faqs and support************** */
+
+
+  /* ***********************footer starts********************** */
+  #footer {
+    position: relative;
+    top: 400px;
+    background-color: #F2F2F2;
+  }
+
+  #footer .footer_top_nav li{
+    float: left;
+    list-style-type: none;
+    margin-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #footer .footer_top_nav_social_media li {
+    float: left;
+    list-style-type: none;
+    margin-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #footer_bottom {
+    position: relative;
+    top: 400px;
+  }
+
+  /* ***********************ends footer starts********************** */
